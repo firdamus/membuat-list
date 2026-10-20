@@ -10,7 +10,7 @@ function App() {
 
 return (
     <div className="container">
-      <h1 className="judul">Anggota Tim Proyek</h1>
+      <h1 className="judul">Anggota Tim Tujuh</h1>
 
       {anggota.map((a) => (
         <KartuProfil
