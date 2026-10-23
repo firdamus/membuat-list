@@ -1,11 +1,11 @@
-export default function KartuProfil({ nama, peran, tahun, aktif }) {
+export default function KartuProfil({ nama, peran, angkatan, aktif }) {
   return (
     <article className="kartu">
-      <h3>{nama}</h3>
-      <p>{peran} - angkatan {tahun}</p>
+      <h3 className="nama">{nama}</h3>
+      <p className="detail">{peran} - angkatan {angkatan}</p>
       {aktif
-        ? <span className="lencana">Aktif</span>
-        : <span className="lencana off">Tidak aktif</span>}
+        ? <span className="badge aktif">Aktif</span>
+        : <span className="badge nonaktif">Tidak aktif</span>}
     </article>
   );
 }
