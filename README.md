@@ -1,16 +1,33 @@
-# React + Vite
+# Membuat List - Anggota Tim
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplikasi React + Vite sederhana yang menampilkan daftar anggota tim dalam bentuk kartu.
 
-Currently, two official plugins are available:
+Demo: https://firdamus.github.io/membuat-list/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tangkapan layar
 
-## React Compiler
+![Tampilan aplikasi](./screenshot.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Komponen
 
-## Expanding the ESLint configuration
+### `KartuProfil`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Prop | Tipe | Keterangan |
+| --- | --- | --- |
+| `nama` | string | Nama anggota |
+| `peran` | string | Peran (Dosen, Mahasiswa, dll.) |
+| `angkatan` | number | Tahun angkatan |
+| `aktif` | boolean | Status keaktifan, menentukan lencana yang tampil |
+
+## Cara menjalankan
+
+```bash
+git clone https://github.com/firdamus/membuat-list.git
+cd membuat-list
+npm install
+npm run dev
+```
+
+## Penggunaan AI
+
+Isi dengan jujur: bagian mana yang dibantu AI, apa yang Anda ubah, dan apa yang Anda tolak.
